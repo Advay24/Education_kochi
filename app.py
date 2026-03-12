@@ -746,7 +746,7 @@ with tab5:
         # Smart classrooms vs enrollment (by school type)
         fig_sm = px.scatter(s_filt.dropna(subset=["students_total"]),
                             x="smart_cls", y="students_total",
-                            color="school_type", trendline="ols",
+                            color="school_type",
                             hover_name="school_name",
                             color_discrete_map={"Government":"#006400","Aided":"#004d99","Private":"#e67e22"},
                             title="Smart Classrooms vs Total Enrollment",
